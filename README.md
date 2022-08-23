@@ -20,3 +20,4 @@ Instruction: 1)Download the file "Multi_Converter.py".
 18)To apply, go back to RGB Animation and attach some FN+ key combination to your file.  
 19)Click Apply in the bottom right corner 
 20)Ready, nice use.
+How it work: https://disk.yandex.ru/d/BvP9qvHcGh-Qow
