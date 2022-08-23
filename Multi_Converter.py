@@ -189,7 +189,7 @@ elif type_of_file == "2":
     filenames_saved = input('Input your keyboard filename: ')
     Image_name = str(input('Input filename: '))
     post_effects = str(input('Input "y" if you want post-effects(led become more bright): '))
-    rem_trans = input('Input "y" if you have error: ')
+    rem_trans = input('Input "y" if you have need to fill Alpha-channel to white: ')
 
     resize()
 
