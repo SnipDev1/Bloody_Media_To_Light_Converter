@@ -1,4 +1,5 @@
 import os
+import art
 import cv2
 import sys
 import shutil
@@ -89,6 +90,9 @@ def resize_for_video(samples: int, use_post_effects: bool):
 
 
 def main():
+    art.tprint('BMLC')
+    print('Bloody Media to Light Converter by SNIP\n')
+
     if platform.system() != 'Windows':
         print('The software can only run on Windows.')
         getch()
@@ -120,6 +124,8 @@ def main():
 
     if not file_path.is_file():
         print('No file with such name.')
+        shutil.rmtree('For_Convertation')
+        shutil.rmtree('Output')
         getch()
         return
 
@@ -131,6 +137,8 @@ def main():
         file_type = 'video'
     else:
         print('Unsupported file type.')
+        shutil.rmtree('For_Convertation')
+        shutil.rmtree('Output')
         getch()
         return
 
@@ -267,6 +275,7 @@ def main():
             f.close()
     shutil.rmtree('For_Convertation')
     shutil.rmtree('Output')
+    print("Finish, open KeyDominator2, thx for using my programm ;)")
 
 
 if __name__ == '__main__':
