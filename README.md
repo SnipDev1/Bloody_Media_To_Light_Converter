@@ -3,7 +3,7 @@ Hello, this is my first project on GitHub. Thanks to it, users of Bloody keyboar
 Instruction: 
 1) Download the file "Multi_Converter.py". 
 2) Move it to an empty folder 
-3) Install the libraries: "pip install moviepy", "pip install webcolors", "pip install opencv-python", "pip install Pillow" 
+3) Start the file:"Setup.py"
 4) Run the "python Multi_Converter.py" command file via the console 
 5) On the first run, specify "1" on the question "First Launch", in the following you can press Enter 
 6) Choose the converter you need(Video, Photo) 
