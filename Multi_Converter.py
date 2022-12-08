@@ -5,7 +5,7 @@ import sys
 import shutil
 import platform
 import webcolors
-from getch import getch
+import msvcrt
 from pathlib import Path
 from PIL import Image, ImageEnhance
 from moviepy.editor import *
@@ -95,12 +95,12 @@ def main():
 
     if platform.system() != 'Windows':
         print('The software can only run on Windows.')
-        getch()
+        msvcrt.getch()
         return
 
     if not os.path.exists('C:\\Program Files (x86)\\KeyDominator2\\KeyDominator2\\Data\\Keyboard\\English\\SLED\\NumberPadAtRight'):
         print('KeyDominator2 is not installed.')
-        getch()
+        msvcrt.getch()
         return
 
     Path('Output').mkdir(parents=True, exist_ok=True)
@@ -126,7 +126,7 @@ def main():
         print('No file with such name.')
         shutil.rmtree('For_Convertation')
         shutil.rmtree('Output')
-        getch()
+        msvcrt.getch()
         return
 
     print(f'Selected file: {file_name}')
@@ -139,7 +139,7 @@ def main():
         print('Unsupported file type.')
         shutil.rmtree('For_Convertation')
         shutil.rmtree('Output')
-        getch()
+        msvcrt.getch()
         return
 
     filenames_saved = input('Input your keyboard filename: ')
